@@ -23,6 +23,7 @@ sudo apt-get -y install tomcat7
 cd /opt
 sudo curl -O ftp://ftp.nrg.wustl.edu/pub/xnat/${XNAT}.tar.gz
 sudo tar -zxvf ${XNAT}.tar.gz
+sudo cp /vagrant/build.properties /opt/${XNAT}
 
 # database settings
 sudo -u postgres createuser -U postgres -S -D -R xnat01
@@ -41,7 +42,6 @@ sudo chmod -R 777 /opt/${XNAT}
 cd /opt/${XNAT}
 sudo su tomcat7 -c "echo 'export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64' >> /home/tomcat7/.bashrc"
 sudo su tomcat7 -c "echo 'export PATH=\${PATH}:/opt/${XNAT}/bin' >> /home/tomcat7/.bashrc"
-sudo su tomcat7 -c "ln -s /vagrant/build.properties build.properties"
 sudo su tomcat7 -c "source ~/.bashrc && bin/setup.sh -Ddeploy=true"
 cd deployments/xnat
 sudo -u xnat01 psql -d xnat -f sql/xnat.sql -U xnat01

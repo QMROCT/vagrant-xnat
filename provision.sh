@@ -1,4 +1,4 @@
-vag#!/bin/bash
+#!/bin/bash
 
 XNAT=xnat-1.6.4
 

@@ -20,6 +20,6 @@ Once the Vagrant box is up and running XNAT is available at http://192.168.50.50
 * Change xdat.url option in build.properties
 * Change config.vm.network option in Vagrantfile
 
-### Author
+### Author:
 Christoph Jansen, HTW Berlin<br/>
 https://github.com/QMROCT/vagrant-xnat

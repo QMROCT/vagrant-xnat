@@ -1,7 +1,8 @@
 vagrant-xnat
 ============
 
-Provision Ubuntu 14.04 based Vagrant box with XNAT
+Provision Ubuntu 14.04 based Vagrant box with XNAT<br/><br/>
+Project is NO LONGER SUPPORTED, since the XNAT developers started a <a href="https://bitbucket.org/nrg/xnat_vagrant_1_6dev/overview">similar project</a> with their 1.6.5 release.
 
 ### Dependencies:
 * VirtualBox
@@ -9,7 +10,6 @@ Provision Ubuntu 14.04 based Vagrant box with XNAT
 
 ### Installation:
 ```bash
-git clone git@github.com:QMROCT/vagrant-xnat.git
 cd vagrant-xnat
 vagrant up
 ```

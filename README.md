@@ -1,8 +1,7 @@
-vagrant-xnat
-============
+# Vagrant XNAT
 
-Provision Ubuntu 14.04 based Vagrant box with XNAT<br/><br/>
-Project is NO LONGER SUPPORTED, since the XNAT developers started a <a href="https://bitbucket.org/nrg/xnat_vagrant_1_6dev/overview">similar project</a> with their 1.6.5 release.
+Provision Ubuntu 14.04 based Vagrant box with XNAT 1.6.5
+
 
 ### Dependencies:
 * VirtualBox
@@ -19,7 +18,3 @@ Once the Vagrant box is up and running XNAT is available at http://192.168.50.50
 ### Change IP address of Vagrant box:
 * Change xdat.url option in build.properties
 * Change config.vm.network option in Vagrantfile
-
-### Author:
-Christoph Jansen, HTW Berlin<br/>
-https://github.com/QMROCT/vagrant-xnat
